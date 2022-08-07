@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/application.css">
+  <title>frontend_b</title>
+</head>
+<body>
+  <div id="app">
+    <main>
+      <h2>フロントエンドB</h2>
+      <form v-on:submit.prevent>
+        <input id="add_from" type="text" v-model="newItem">
+        <button id="add_btn" v-on:click="addItem">追加</button>
+      </form>
+      <ul>
+        <li v-for="(todo, index) in todos">
+          <a class="item_list_delete" v-on:click="deleteItem(index)">
+            <p>X</p>
+          </a>
+          <span class="item_list_name" v-bind:class="{ done: todo.isDone }">
+            <p>{{ todo.item }}</p>
+          </span>
+        </li>
+      </ul>
+    </main>
+  </div>
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="../javascript/index.js"></script>
+</body>
+</html>

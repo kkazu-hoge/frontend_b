@@ -1,0 +1,73 @@
+html {
+  /* 文字サイズ 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+}
+
+#app form {
+  margin-bottom: 3rem;
+}
+
+#add_from {
+  width: 24.4rem;
+  margin-right: 1rem;
+  height: 2.6rem;
+  border: solid 0.1rem navy;
+}
+
+#add_btn {
+  width: 4rem;
+  height: 3rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 0px;
+}
+
+#app ul {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+}
+
+#app li {
+  margin-bottom: 0.5rem;
+  text-align: left
+}
+
+#app .item_list_delete {
+  display: inline-block;
+  vertical-align: top;
+  width: 5rem;
+  height: 5rem;
+  background-color: navy;
+  color: white;
+  border: none;
+}
+
+#app .item_list_delete p{
+  margin: 1.3rem 1rem 1.3rem 1rem;
+  text-align: center;
+}
+
+#app .item_list_name {
+  display: inline-block;
+  vertical-align: top;
+  width: 24.8rem;
+  height: 4.8rem;
+  border: solid 0.1rem navy;
+}
+
+#app .item_list_name p{
+  margin: 1.3rem 0 1.3rem 2rem;
+}
+
